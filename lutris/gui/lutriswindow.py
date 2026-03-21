@@ -1,4 +1,11 @@
-"""Main window for the Lutris interface."""
+# A significant portion of this code was written by Lutris maintainers and contributors (as listed in AUTHORS file) for the Lutris project. No 
+# credit is taken for any of the work made by them. This project's commit history allows you to view what was changed, when, and by whom.
+# 
+# Modifications were made to this file by ronago1 in 2026
+
+
+
+"""Main window for the Lutrus interface.""" 
 
 # pylint: disable=too-many-lines
 # pylint: disable=no-member
@@ -897,19 +904,19 @@ class LutrisWindow(Gtk.ApplicationWindow, DialogLaunchUIDelegate, DialogInstallU
 
     def show_splash(self):
         theme = "dark" if self.application.style_manager.is_dark else "light"
-        side_splash = Gtk.Image(visible=True)
-        side_splash.set_from_file(os.path.join(datapath.get(), "media/side-%s.svg" % theme))
-        side_splash.set_alignment(0, 0)
+        #side_splash = Gtk.Image(visible=True)
+        #side_splash.set_from_file(os.path.join(datapath.get(), "media/side-%s.svg" % theme))
+        #side_splash.set_alignment(0, 0)
 
         center_splash = Gtk.Image(visible=True)
         center_splash.set_alignment(0.5, 0.5)
         center_splash.set_from_file(os.path.join(datapath.get(), "media/splash-%s.svg" % theme))
 
-        splash_box = Gtk.HBox(visible=True, margin_top=24)
-        splash_box.pack_start(side_splash, False, False, 12)
+        splash_box = Gtk.HBox(visible=True, margin_top=30)
+        #splash_box.pack_start(side_splash, False, False, 12)
         splash_box.set_center_widget(center_splash)
         splash_box.is_splash = True
-        self.show_overlay(splash_box, Gtk.Align.FILL, Gtk.Align.FILL)
+        self.show_overlay(splash_box, Gtk.Align.CENTER, Gtk.Align.CENTER)
 
     def is_showing_splash(self):
         if self.blank_overlay.get_visible():

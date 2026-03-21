@@ -5,12 +5,36 @@
    viewBox="0 0 66.24868 53.183203"
    height="53.183205mm"
    width="66.24868mm"
+   sodipodi:docname="splash-light.svg"
+   inkscape:version="1.4.3 (0d15f75042, 2025-12-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:cc="http://creativecommons.org/ns#"
    xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     showguides="true"
+     inkscape:zoom="4.2354491"
+     inkscape:cx="81.337301"
+     inkscape:cy="105.0656"
+     inkscape:window-width="2560"
+     inkscape:window-height="1407"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer2-6" />
   <defs
      id="defs2">
     <radialGradient
@@ -133,7 +157,8 @@
      transform="translate(-37.179232,-112.88161)">
     <g
        id="g449"
-       transform="translate(-36.420548,87.238572)">
+       transform="translate(-36.420548,87.238572)"
+       style="display:none">
       <g
          id="g412"
          transform="translate(20.585487,-44.033444)">
@@ -538,6 +563,83 @@
            d="m 137.40255,55.403645 h 0.5013 l 0.82632,-1.178882 1.11829,-1.476355 h -0.5013 l -0.84285,1.200916 z m 1.88952,0 h 0.50681 l -1.09074,-1.498391 -0.80429,-1.156846 h -0.5068 l 1.07421,1.492882 z"
            style="font-family:Cantarell;-inkscape-font-specification:Cantarell"
            id="path453" />
+      </g>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:7.76111px;line-height:0;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;display:none;fill:#ffffff;stroke:#000000;stroke-width:0"
+       x="70.428978"
+       y="121.643"
+       id="text1"
+       inkscape:label="text1"><tspan
+         sodipodi:role="line"
+         id="tspan1"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:9.87778px;line-height:0.8;font-family:Inter;-inkscape-font-specification:'Inter Medium';stroke-width:0"
+         x="70.428978"
+         y="121.643">Welcome to</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:15.5222px;line-height:0.89;font-family:Inter;-inkscape-font-specification:'Inter Bold';stroke-width:0"
+         x="70.428978"
+         y="134.19846"
+         id="tspan2">Lutrus</tspan></text>
+    <g
+       inkscape:label="Layer 1"
+       id="layer2-6"
+       inkscape:groupmode="layer"
+       transform="translate(2.7794769e-6,-0.23654673)">
+      <g
+         id="g449-9"
+         transform="translate(-36.420549,87.23857)">
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:5.64444px;line-height:1.2;font-family:Inter;-inkscape-font-specification:'Inter Light';writing-mode:lr-tb;direction:ltr;fill:#1d1d1d;fill-opacity:1;stroke:#000000;stroke-width:0"
+           x="75.226318"
+           y="56.64093"
+           id="text27"><tspan
+             sodipodi:role="line"
+             id="tspan27"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:Inter;-inkscape-font-specification:Inter;fill:#1d1d1d;fill-opacity:1;stroke-width:0"
+             x="75.226318"
+             y="56.64093">Play your games on Linux</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;line-height:1.2;font-family:Inter;-inkscape-font-specification:Inter;font-variant-ligatures:none;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;display:inline;fill:#1d1d1d;fill-opacity:1;stroke:#000000;stroke-width:0"
+           x="106.79578"
+           y="70.277054"
+           id="text28"><tspan
+             sodipodi:role="line"
+             style="fill:#1d1d1d;fill-opacity:1;stroke-width:0"
+             x="106.79578"
+             y="70.277054"
+             id="tspan29">Add a game or connect to</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#1d1d1d;fill-opacity:1;stroke-width:0"
+             x="106.79578"
+             y="77.050385"
+             id="tspan30">a service to begin.</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:7.76111px;line-height:0;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#1d1d1d;stroke:#000000;stroke-width:0;fill-opacity:1"
+           x="33.249744"
+           y="8.2448025"
+           id="text1-3"
+           inkscape:label="text1"
+           transform="translate(73.59978,25.64304)"><tspan
+             style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:9.87778px;line-height:1.2;font-family:Inter;-inkscape-font-specification:'Inter Medium';stroke-width:0;fill:#1d1d1d;fill-opacity:1"
+             sodipodi:role="line"
+             id="tspan26"
+             x="33.249744"
+             y="8.2448025">Welcome to</tspan><tspan
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:15.5222px;line-height:0.69;font-family:Inter;-inkscape-font-specification:'Inter Bold';stroke-width:0;fill:#1d1d1d;fill-opacity:1"
+             sodipodi:role="line"
+             id="tspan17"
+             x="33.249744"
+             y="21.2236">Lutrus</tspan><tspan
+             sodipodi:role="line"
+             style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:2.46944px;line-height:0.69;font-family:Inter;-inkscape-font-specification:'Inter Light';stroke-width:0;fill:#1d1d1d;fill-opacity:1"
+             x="33.249744"
+             y="23.928146"
+             id="tspan3">(working name)</tspan></text>
       </g>
     </g>
   </g>

@@ -1,3 +1,8 @@
+# A significant portion of this code was written by Lutris maintainers and contributors (as listed in AUTHORS file) for the Lutris project. No
+# credit is taken for any of the work made by them. This project's commit history allows you to view what was changed, when, and by whom.
+#
+# Modifications were made to this file by ronago1 in 2026
+
 #!/usr/bin/env python3
 import os
 import sys
@@ -7,7 +12,7 @@ from setuptools import setup
 from lutris import __version__ as VERSION
 
 if sys.version_info < (3, 10):
-    sys.exit("Python >= 3.10 is required to run Lutris")
+    sys.exit("Python >= 3.10 is required to run Lutrus")
 
 data_files = []
 
@@ -18,7 +23,7 @@ for directory, _, filenames in os.walk("share"):
         data_files.append((os.path.join("share", dest), files))
 
 setup(
-    name="lutris",
+    name="lutrus",
     version=VERSION,
     license="GPL-3",
     author="Mathieu Comandon",

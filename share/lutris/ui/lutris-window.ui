@@ -1,18 +1,184 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Generated with glade 3.40.0 -->
+<!-- A significant portion of this code was written by Lutris maintainers and contributors (as listed in AUTHORS file) for the Lutris project. No
+credit is taken for any of the work made by them. This project's commit history allows you to view what was changed, when, and by whom.
+
+Modifications were made to this file by ronago1 in 2026 -->
 <interface>
   <requires lib="gtk+" version="3.16"/>
-  <object class="GtkImage" id="view_grid_symbolic">
+  <object class="GtkHeaderBar" id="header_bar">
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="show-close-button">True</property>
+    <child type="title">
+      <placeholder/>
+    </child>
+    <child>
+      <placeholder/>
+    </child>
+    <child>
+      <placeholder/>
+    </child>
+  </object>
+  <object class="GtkImage" id="show_grid_symbolic">
     <property name="visible">True</property>
     <property name="can-focus">False</property>
     <property name="pixel-size">16</property>
-    <property name="icon-name">view-grid-symbolic</property>
+    <property name="icon-name">show-grid-symbolic</property>
+  </object>
+  <object class="GtkSizeGroup" id="size1">
+    <property name="mode">both</property>
   </object>
   <object class="GtkImage" id="view_list_symbolic">
     <property name="visible">True</property>
     <property name="can-focus">False</property>
     <property name="pixel-size">16</property>
     <property name="icon-name">view-list-symbolic</property>
+  </object>
+  <object class="GtkPopover" id="view_menu_widget">
+    <property name="can-focus">False</property>
+    <property name="position">bottom</property>
+    <child>
+      <object class="GtkBox">
+        <property name="width-request">160</property>
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <property name="border-width">9</property>
+        <property name="orientation">vertical</property>
+        <property name="spacing">3</property>
+        <child>
+          <object class="GtkModelButton" id="show_installed_only">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="receives-default">False</property>
+            <property name="action-name">win.show-installed-only</property>
+            <property name="text" translatable="yes">_Installed Games Only</property>
+            <accelerator key="i" signal="clicked" modifiers="GDK_CONTROL_MASK"/>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkModelButton" id="show_side_panel">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="receives-default">False</property>
+            <property name="action-name">win.show-side-panel</property>
+            <property name="text" translatable="yes">Show Side _Panel</property>
+            <accelerator key="0xffffff" signal="clicked"/>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkModelButton" id="show_hidden_games_button">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="receives-default">False</property>
+            <property name="action-name">win.show-hidden-games</property>
+            <property name="text" translatable="yes">Show _Hidden Games</property>
+            <accelerator key="h" signal="clicked" modifiers="GDK_CONTROL_MASK"/>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">2</property>
+          </packing>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <object class="GtkModelButton" id="preferences">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">False</property>
+            <property name="action-name">win.preferences</property>
+            <property name="text" translatable="yes">Preferences</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">7</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkSeparator">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">9</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkModelButton" id="open_discord">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">False</property>
+            <property name="action-name">win.open-discord</property>
+            <property name="text" translatable="yes">Discord</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">10</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkModelButton" id="open_forums">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">False</property>
+            <property name="action-name">win.open-forums</property>
+            <property name="text" translatable="yes">Lutris forums</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">11</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkModelButton" id="donate">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">False</property>
+            <property name="action-name">win.donate</property>
+            <property name="text" translatable="yes">Make a donation</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">12</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkModelButton" id="about">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">False</property>
+            <property name="action-name">win.about</property>
+            <property name="text" translatable="yes">About Lutris</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">13</property>
+          </packing>
+        </child>
+      </object>
+    </child>
   </object>
   <object class="GtkAdjustment" id="zoom_adjustment">
     <property name="upper">3</property>
@@ -267,104 +433,20 @@
       </object>
     </child>
     <child type="titlebar">
-      <object class="GtkHeaderBar" id="header_bar">
+      <object class="GtkBox">
         <property name="visible">True</property>
         <property name="can-focus">False</property>
-        <property name="show-close-button">True</property>
-        <child type="title">
-          <object class="GtkBox" id="search_box">
-            <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <child>
-              <object class="GtkSearchEntry" id="search_entry">
-                <property name="visible">True</property>
-                <property name="can-focus">True</property>
-                <property name="tooltip-markup" translatable="yes">Enter the name of a game to search for, or use search terms:
-
-&lt;b&gt;installed:&lt;/b&gt;&lt;i&gt;true&lt;/i&gt;			Only installed games.
-&lt;b&gt;hidden:&lt;/b&gt;&lt;i&gt;true&lt;/i&gt;			Only hidden games.
-&lt;b&gt;favorite:&lt;/b&gt;&lt;i&gt;true&lt;/i&gt;			Only favorite games.
-&lt;b&gt;categorized:&lt;/b&gt;&lt;i&gt;true&lt;/i&gt;		Only games in a category.
-&lt;b&gt;category:&lt;/b&gt;&lt;i&gt;x&lt;/i&gt;			Only games in category &lt;i&gt;x&lt;/i&gt;.
-&lt;b&gt;source:&lt;/b&gt;&lt;i&gt;steam&lt;/i&gt;			Only Steam games
-&lt;b&gt;runner:&lt;/b&gt;&lt;i&gt;wine&lt;/i&gt;			Only Wine games
-&lt;b&gt;platform:&lt;/b&gt;&lt;i&gt;windows&lt;/i&gt;	Only Windows games
-&lt;b&gt;playtime:&lt;/b&gt;&lt;i&gt;&amp;gt;2 hours&lt;/i&gt;	Only games played for more than 2 hours.
-&lt;b&gt;lastplayed:&lt;/b&gt;&lt;i&gt;&amp;lt;2 days&lt;/i&gt;	Only games played in the last 2 days.
-&lt;b&gt;directory:&lt;/b&gt;&lt;i&gt;game/dir&lt;/i&gt;	Only games at the path.</property>
-                <property name="halign">center</property>
-                <property name="valign">center</property>
-                <property name="width-chars">30</property>
-                <property name="placeholder-text" translatable="yes">Search games</property>
-                <signal name="key-press-event" handler="on_search_entry_key_press" swapped="no"/>
-                <signal name="search-changed" handler="on_search_entry_changed" swapped="no"/>
-              </object>
-              <packing>
-                <property name="expand">True</property>
-                <property name="fill">True</property>
-                <property name="position">0</property>
-              </packing>
-            </child>
-            <child>
-              <object class="GtkToggleButton" id="search_filters_button">
-                <property name="visible">True</property>
-                <property name="can-focus">True</property>
-                <property name="receives-default">True</property>
-                <property name="action-name">win.open-search-filters</property>
-                <child>
-                  <object class="GtkImage">
-                    <property name="visible">True</property>
-                    <property name="can-focus">False</property>
-                    <property name="use-fallback">True</property>
-                  </object>
-                </child>
-              </object>
-              <packing>
-                <property name="expand">False</property>
-                <property name="fill">True</property>
-                <property name="position">1</property>
-              </packing>
-            </child>
-            <style>
-              <class name="linked"/>
-            </style>
-          </object>
-          <packing>
-            <property name="position">1</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkBox" id="left_header_box">
-            <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <property name="spacing">6</property>
-            <child>
-              <object class="GtkButton">
-                <property name="visible">True</property>
-                <property name="can-focus">True</property>
-                <property name="receives-default">False</property>
-                <property name="tooltip-text" translatable="yes">Add Game</property>
-                <property name="action-name">win.add-game</property>
-                <child>
-                  <object class="GtkImage">
-                    <property name="visible">True</property>
-                    <property name="can-focus">False</property>
-                    <property name="icon-name">list-add-symbolic</property>
-                  </object>
-                </child>
-              </object>
-              <packing>
-                <property name="expand">False</property>
-                <property name="fill">True</property>
-                <property name="position">0</property>
-              </packing>
-            </child>
-          </object>
-        </child>
-        <child>
+        <property name="margin-start">3</property>
+        <property name="margin-end">3</property>
+        <property name="margin-top">3</property>
+        <property name="margin-bottom">3</property>
+        <property name="spacing">11</property>
+        <child type="center">
           <object class="GtkBox" id="right_header_box">
             <property name="visible">True</property>
             <property name="can-focus">False</property>
+            <property name="halign">end</property>
+            <property name="valign">center</property>
             <property name="spacing">6</property>
             <child>
               <object class="GtkBox">
@@ -440,20 +522,118 @@
             </child>
           </object>
           <packing>
-            <property name="pack-type">end</property>
-            <property name="position">1</property>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">3</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkBox" id="left_header_box">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="halign">start</property>
+            <property name="valign">center</property>
+            <property name="spacing">6</property>
+            <child>
+              <object class="GtkButton">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">False</property>
+                <property name="tooltip-text" translatable="yes">Add Game</property>
+                <property name="action-name">win.add-game</property>
+                <child>
+                  <object class="GtkImage">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="icon-name">list-add-symbolic</property>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <object class="GtkBox" id="search_box">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="halign">center</property>
+            <property name="valign">center</property>
+            <child>
+              <object class="GtkSearchEntry" id="search_entry">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="tooltip-markup" translatable="yes">Enter the name of a game to search for, or use search terms:
+
+&lt;b&gt;installed:&lt;/b&gt;&lt;i&gt;true&lt;/i&gt;			Only installed games.
+&lt;b&gt;hidden:&lt;/b&gt;&lt;i&gt;true&lt;/i&gt;			Only hidden games.
+&lt;b&gt;favorite:&lt;/b&gt;&lt;i&gt;true&lt;/i&gt;			Only favorite games.
+&lt;b&gt;categorized:&lt;/b&gt;&lt;i&gt;true&lt;/i&gt;		Only games in a category.
+&lt;b&gt;category:&lt;/b&gt;&lt;i&gt;x&lt;/i&gt;			Only games in category &lt;i&gt;x&lt;/i&gt;.
+&lt;b&gt;source:&lt;/b&gt;&lt;i&gt;steam&lt;/i&gt;			Only Steam games
+&lt;b&gt;runner:&lt;/b&gt;&lt;i&gt;wine&lt;/i&gt;			Only Wine games
+&lt;b&gt;platform:&lt;/b&gt;&lt;i&gt;windows&lt;/i&gt;	Only Windows games
+&lt;b&gt;playtime:&lt;/b&gt;&lt;i&gt;&amp;gt;2 hours&lt;/i&gt;	Only games played for more than 2 hours.
+&lt;b&gt;lastplayed:&lt;/b&gt;&lt;i&gt;&amp;lt;2 days&lt;/i&gt;	Only games played in the last 2 days.
+&lt;b&gt;directory:&lt;/b&gt;&lt;i&gt;game/dir&lt;/i&gt;	Only games at the path.</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="width-chars">30</property>
+                <property name="placeholder-text" translatable="yes">Search games</property>
+                <signal name="key-press-event" handler="on_search_entry_key_press" swapped="no"/>
+                <signal name="search-changed" handler="on_search_entry_changed" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">True</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkToggleButton" id="search_filters_button">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <property name="action-name">win.open-search-filters</property>
+                <child>
+                  <object class="GtkImage">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="use-fallback">True</property>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+            <style>
+              <class name="linked"/>
+            </style>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">2</property>
           </packing>
         </child>
       </object>
     </child>
   </template>
-  <object class="GtkSizeGroup" id="size1">
-    <property name="mode">both</property>
-    <widgets>
-      <widget name="left_header_box"/>
-      <widget name="right_header_box"/>
-    </widgets>
-  </object>
   <object class="GtkPopover" id="view_adjust_menu">
     <property name="can-focus">False</property>
     <property name="relative-to">viewoptions_menubutton</property>
@@ -621,153 +801,6 @@
             <property name="expand">False</property>
             <property name="fill">True</property>
             <property name="position">8</property>
-          </packing>
-        </child>
-      </object>
-    </child>
-  </object>
-  <object class="GtkPopover" id="view_menu_widget">
-    <property name="can-focus">False</property>
-    <property name="relative-to">header_bar</property>
-    <property name="position">bottom</property>
-    <child>
-      <object class="GtkBox">
-        <property name="width-request">160</property>
-        <property name="visible">True</property>
-        <property name="can-focus">False</property>
-        <property name="border-width">9</property>
-        <property name="orientation">vertical</property>
-        <property name="spacing">3</property>
-        <child>
-          <object class="GtkModelButton" id="show_installed_only">
-            <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <property name="receives-default">False</property>
-            <property name="action-name">win.show-installed-only</property>
-            <property name="text" translatable="yes">_Installed Games Only</property>
-            <accelerator key="i" signal="clicked" modifiers="GDK_CONTROL_MASK"/>
-          </object>
-          <packing>
-            <property name="expand">False</property>
-            <property name="fill">True</property>
-            <property name="position">0</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkModelButton" id="show_side_panel">
-            <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <property name="receives-default">False</property>
-            <property name="action-name">win.show-side-panel</property>
-            <property name="text" translatable="yes">Show Side _Panel</property>
-            <accelerator key="0xffffff" signal="clicked"/>
-          </object>
-          <packing>
-            <property name="expand">False</property>
-            <property name="fill">True</property>
-            <property name="position">1</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkModelButton" id="show_hidden_games_button">
-            <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <property name="receives-default">False</property>
-            <property name="action-name">win.show-hidden-games</property>
-            <property name="text" translatable="yes">Show _Hidden Games</property>
-            <accelerator key="h" signal="clicked" modifiers="GDK_CONTROL_MASK"/>
-          </object>
-          <packing>
-            <property name="expand">False</property>
-            <property name="fill">True</property>
-            <property name="position">2</property>
-          </packing>
-        </child>
-        <child>
-          <placeholder/>
-        </child>
-        <child>
-          <placeholder/>
-        </child>
-        <child>
-          <object class="GtkModelButton" id="preferences">
-            <property name="visible">True</property>
-            <property name="can-focus">True</property>
-            <property name="receives-default">False</property>
-            <property name="action-name">win.preferences</property>
-            <property name="text" translatable="yes">Preferences</property>
-          </object>
-          <packing>
-            <property name="expand">False</property>
-            <property name="fill">True</property>
-            <property name="position">7</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkSeparator">
-            <property name="visible">True</property>
-            <property name="can-focus">False</property>
-          </object>
-          <packing>
-            <property name="expand">False</property>
-            <property name="fill">True</property>
-            <property name="position">9</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkModelButton" id="open_discord">
-            <property name="visible">True</property>
-            <property name="can-focus">True</property>
-            <property name="receives-default">False</property>
-            <property name="action-name">win.open-discord</property>
-            <property name="text" translatable="yes">Discord</property>
-          </object>
-          <packing>
-            <property name="expand">False</property>
-            <property name="fill">True</property>
-            <property name="position">10</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkModelButton" id="open_forums">
-            <property name="visible">True</property>
-            <property name="can-focus">True</property>
-            <property name="receives-default">False</property>
-            <property name="action-name">win.open-forums</property>
-            <property name="text" translatable="yes">Lutris forums</property>
-          </object>
-          <packing>
-            <property name="expand">False</property>
-            <property name="fill">True</property>
-            <property name="position">11</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkModelButton" id="donate">
-            <property name="visible">True</property>
-            <property name="can-focus">True</property>
-            <property name="receives-default">False</property>
-            <property name="action-name">win.donate</property>
-            <property name="text" translatable="yes">Make a donation</property>
-          </object>
-          <packing>
-            <property name="expand">False</property>
-            <property name="fill">True</property>
-            <property name="position">12</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkModelButton" id="about">
-            <property name="visible">True</property>
-            <property name="can-focus">True</property>
-            <property name="receives-default">False</property>
-            <property name="action-name">win.about</property>
-            <property name="text" translatable="yes">About Lutris</property>
-          </object>
-          <packing>
-            <property name="expand">False</property>
-            <property name="fill">True</property>
-            <property name="position">13</property>
           </packing>
         </child>
       </object>
